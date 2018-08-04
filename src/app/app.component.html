@@ -1,25 +1,25 @@
 <header>
-  <div class="menu-btn">
+  <div class="menu-btn" [class.close]="showMenu" (click)="showMenu= !showMenu">
     <div class="btn-line"></div>
     <div class="btn-line"></div>
     <div class="btn-line"></div>
   </div>
 
-  <nav class="menu">
-    <div class="menu-branding">
+  <nav class="menu" [class.show]="showMenu">
+    <div class="menu-branding" [class.show]="showMenu">
       <div class="portrait"></div>
     </div>
-    <ul class="menu-nav">
-      <li class="nav-item">
+    <ul class="menu-nav" [class.show]="showMenu">
+      <li class="nav-item" [class.show]="showMenu">
         <a href="/" class="nav-link">Home</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item" [class.show]="showMenu">
         <a href="/about" class="nav-link">About Me</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item" [class.show]="showMenu">
         <a href="/work" class="nav-link">My Work</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item" [class.show]="showMenu">
         <a href="/contact" class="nav-link">How To Reach Me</a>
       </li>
     </ul>
