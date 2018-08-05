@@ -6,7 +6,7 @@ import { Component, Renderer2 } from '@angular/core';
   styleUrls: ['./about.component.scss']
 })
 export class AboutComponent{
-
+   showMenu :Boolean =false;
   constructor(private renderer: Renderer2) {
     this.renderer.removeClass(document.body, 'bg-img');
    }

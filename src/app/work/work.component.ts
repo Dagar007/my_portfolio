@@ -7,6 +7,7 @@ import { Component, Renderer2 } from '@angular/core';
 })
 export class WorkComponent {
 
+  showMenu :Boolean =false;
   constructor(private renderer: Renderer2) {
     this.renderer.removeClass(document.body, 'bg-img');
    }
