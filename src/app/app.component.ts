@@ -8,9 +8,5 @@ import { Component, ElementRef, Renderer2, HostListener } from '@angular/core';
 export class AppComponent {
   title = 'app';
   showMenu : Boolean = false;
-
-  constructor(private el : ElementRef, private renderer:Renderer2){
-
-  }
  
 }
