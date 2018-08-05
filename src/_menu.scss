@@ -85,9 +85,9 @@
     .portrait{
       width: 250px;
       height: 250px;
-      background: url('../src/assets/img/20689524_1659323630745407_7155750675761077269_o.jpg');
+      background: url('../src/assets/img/portrait.jpg');
       border-radius: 50%;
-      border: solid 3px $secondary-color;
+      border: solid 3px $secondary-color; 
     }
   }
   .nav-item{
