@@ -1,3 +1,49 @@
-<p>
-  contact works!
-</p>
+<header>
+  <div class="menu-btn" [class.close]="showMenu" (click)="showMenu= !showMenu">
+    <div class="btn-line"></div>
+    <div class="btn-line"></div>
+    <div class="btn-line"></div>
+  </div>
+
+  <nav class="menu" [class.show]="showMenu">
+    <div class="menu-branding" [class.show]="showMenu">
+      <div class="portrait"></div>
+    </div>
+    <ul class="menu-nav" [class.show]="showMenu">
+      <li class="nav-item" [class.show]="showMenu">
+        <a href="/" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item" [class.show]="showMenu">
+        <a routerLink="/about" class="nav-link">About Me</a>
+      </li>
+      <li class="nav-item" [class.show]="showMenu">
+        <a routerLink="/work" class="nav-link">My Work</a>
+      </li>
+      <li class="nav-item current" [class.show]="showMenu">
+        <a routerLink="/contact" class="nav-link">How To Reach Me</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+<main id="conatct">
+  <h1 class="lg-heading">Contact
+    <span class="text-secondary">Me </span>
+  </h1>
+  <h2 class="sm-heading">This is how you can reach me...</h2>
+  <div class="boxes">
+    <div>
+      <span class="text-secondary">Email: </span> dagardeepak88@gmail.com
+    </div>
+    <div>
+      <span class="text-secondary">Phone: </span> +(91) 75085-56999
+    </div>
+    <div>
+      <span class="text-secondary">Office: </span> Infosys Limited, Gurugram
+    </div>
+
+  </div>
+</main>
+
+<footer id="main-footer">
+  Copyright &copy; 2018
+</footer>
